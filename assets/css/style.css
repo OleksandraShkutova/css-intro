@@ -1,6 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    border: 5px red solid;
+    border: 5px solid red;
     text-align: center;
 }
 
@@ -16,15 +16,18 @@ h1 {
 p {
     display: inline-block;
     width: 200px;
-    height: 300px;
     background-color: blanchedalmond;
     border: 5px solid red;
     padding: 10px;
-    margin: 20px;
-    vertical-align: middle;
-}
+    box-sizing: border-box;
+   }
+
 #subscribe-btn {
     color: blueviolet;
+}
+
+ul { 
+    text-align: center;
 }
 
 .nav-link-item {
@@ -35,9 +38,12 @@ a {
     color: inherit;
     text-decoration: none;
     width: 100px;
-    height: 50px;
-    border: 5 solid red;
+    border: 5px solid red;
     padding: 10px;
+    margin: 0 20px;
     margin: 20px;
+    text-align: center;
     
 }
+
+
