@@ -1,3 +1,43 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    border: 5px red solid;
+    text-align: center;
+}
+
 h1 {
-    color: red;
+    color: blue;
+}
+
+.annotation {
+    color: aqua;
+    font-size: 16px;
+}
+
+p {
+    display: inline-block;
+    width: 200px;
+    height: 300px;
+    background-color: blanchedalmond;
+    border: 5px solid red;
+    padding: 10px;
+    margin: 20px;
+    vertical-align: middle;
+}
+#subscribe-btn {
+    color: blueviolet;
+}
+
+.nav-link-item {
+    display: inline;
+}
+a {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+    width: 100px;
+    height: 50px;
+    border: 5 solid red;
+    padding: 10px;
+    margin: 20px;
+    
 }
