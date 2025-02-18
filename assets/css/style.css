@@ -73,3 +73,19 @@ h1 {
     color: #926239;
     background-color: #f4f4f4;
 }
+
+body h2 {
+    color: black;
+}
+
+section > p {
+    color: black;
+}
+
+h2 + p {
+    color: red;
+}
+
+h1 ~ p {
+    color: green;
+}
