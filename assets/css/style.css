@@ -1,5 +1,131 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
+    
+  }
+
+ body {
+    background-color: #333;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    line-height: 1.5;
+    width: 100%;
+ } 
+
+header {
+   background-image: url(./../images/pexels-photo-248515.png);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   color: white;
+   padding: 7em;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
 }
+
+h3 {
+    padding-top: 1em;
+}
+
+p {
+    padding: 1em 0;
+}
+
+.btn {
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    padding: 1em 2em;
+    border: 1px solid #666;
+    margin: 0.5em 0;
+}
+a {
+    text-decoration: none;
+}
+
+.section-a {
+    background-color: #eaeaea;
+    color: #333;
+    padding: 1.5em 7em;
+    
+}
+
+.content-sc-a {
+    column-count: 2;
+    
+}
+
+.section-b-box {
+    list-style: none;
+    padding: 1.5em 7em;
+    display: flex;
+    justify-content: stretch;
+}
+
+.box-a, .box-b, .box-c {
+    background-color: #eaeaea;
+    color: #333;
+    width: calc(100% / 3);
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.img-box {
+    width: 100%;
+    height: calc(100% / 2);
+    
+}
+
+.section-c {
+    background-color: #eaeaea;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 1em 7em;
+}
+
+.section-d {
+    background-color: #2690d4;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+ .sc-d-box-a {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 50%;
+    padding: 1em;
+ }
+
+ .sc-d-box-b {
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 50%;
+    padding: 1em;
+ }
+
+.footer {
+    list-style: none;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+   }
+
+
+
 
