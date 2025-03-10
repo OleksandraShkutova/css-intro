@@ -1,119 +1,56 @@
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    
-  }
+  } 
 
- body {
-    background-color: #333;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.1em;
-    line-height: 1.5;
-    width: 100%;
- } 
-
-header {
-   background-image: url(./../images/pexels-photo-248515.png);
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
-   color: white;
-   padding: 7em;
-   margin: 0 auto;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
+html {
+  --user-photo-size: 75px;
 }
 
-h3, p {
-    padding-top: 1em;
+.usersList {
+  padding: 15px;
+}  
+
+.userListItem {
+  box-shadow: 0 0 5px gray;
+  padding: 10px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
 }
 
-.btn {
-    background-color: #333;
-    color: white;
-    text-decoration: none;
-    padding: 1em 2em;
-    border: 1px solid #666;
-    margin: 1em;
-}
-a {
-    text-decoration: none;
+.userImageWrapper {
+  height: var(--user-photo-size);
+  width: var(--user-photo-size);
+  overflow: hidden;
+  border-radius: 50%;
+  border: 1px solid black;
 }
 
-.section-a, .section-b, .section-c {
-    padding: 1.5em 7em;
+.userImageWrapper img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  
 }
 
-.section-a {
-    background-color: #eaeaea;
-    color: #333;  
+.userName {
+
 }
 
-.content-sc-a {
-    column-count: 2; 
+.userDiscraption {
+
 }
 
-.section-b {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.trashBtn {
+  margin-left: auto;
+  border: none;
+  background: transparent;
+  font-size: 2em;
 }
 
-.box-a, .box-b, .box-c {
-    background-color: #eaeaea;
-    color: #333;
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
+.trashBtn:hover {
+  cursor: pointer;
 }
-
-.img-box {
-    width: 100%;
-    height: calc(100% / 2);
-}
-
-.section-c {
-    background-color: #eaeaea;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-}
-
-.section-d {
-    background-color: #2690d4;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-}
- .sc-d-box-a, .sc-d-box-b {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    width: 50%;
-    padding: 1em;
- }
-
- .sc-d-box-b {
-    background-color: #333;
- }
-
-.footer {
-    list-style: none;
-    background-color: black;
-    color: white;
-    display: flex;
-    justify-content: space-around;
-    padding: 1em;
-   }
 
 
 
