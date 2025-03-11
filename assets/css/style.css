@@ -1,57 +1,31 @@
 * {
     box-sizing: border-box;
   } 
-
-html {
-  --user-photo-size: 75px;
-}
-
-.usersList {
+ 
+body {
   padding: 15px;
-}  
-
-.userListItem {
-  box-shadow: 0 0 5px gray;
-  padding: 10px;
-  display: flex;
-  gap: 15px;
-  align-items: center;
 }
 
-.userImageWrapper {
-  height: var(--user-photo-size);
-  width: var(--user-photo-size);
-  overflow: hidden;
-  border-radius: 50%;
-  border: 1px solid black;
-}
-
-.userImageWrapper img {
-  height: 100%;
+.article {
+  max-width: 900px;
   width: 100%;
+  min-width: 300px;
+  box-shadow: 0 0 5px gray;
+  margin: 0 auto;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  gap: 15px;
+}
+
+.articleContent, .imageBox {
+  flex-basis: 300px;
+  flex-grow: 1;
+
+}
+
+.imageBox img {
+  width: 100%;
+  height: 250px;
   object-fit: cover;
-  
 }
-
-.userName {
-
-}
-
-.userDiscraption {
-
-}
-
-.trashBtn {
-  margin-left: auto;
-  border: none;
-  background: transparent;
-  font-size: 2em;
-}
-
-.trashBtn:hover {
-  cursor: pointer;
-}
-
-
-
-
