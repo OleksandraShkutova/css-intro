@@ -1,60 +1,88 @@
 * {
     box-sizing: border-box;
   } 
- 
+
+html {
+    --color1: #515b34;
+    --color2: #d97961;
+    --color3: #fff9f9;
+  }
+
 body {
-  padding: 15px;
-  background-color: gainsboro;
-  display: flex;
-  flex-wrap: wrap;
-}
+    background-color: #e6efe9;
+    display: flex;
+    flex-wrap: wrap;
+  }
 
 .userCard {
-  background-color: whitesmoke;
-  padding: 15px;
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-grow: 1;
-  flex-basis: 300px;
-  min-width: 260px;
-  max-width: 300px;
+    background-color: var(--color3);
+    font-family: Roboto;
+    text-align: center;
+    width: 330px;
+    height: 450px;
+    padding: 15px;
+    border-radius:5%;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.userPhoto img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: left top;
+  }
+
+.userName {
+    line-height: 1.5em;
+    color: var(--color1);
+  }
+ 
+h2 + p {
+  color: var(--color2);
 }
 
-.editBtn {
-  align-self: flex-end;
+.userContent {
+  width: 100%;
+  height: 47px;
+  overflow: hidden;
 }
 
-.userImg {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-top: -20px;
-}
+h3 {
+  color: var(--color1);
+ }
 
-.userTxt {
-  text-align: center;
-}
+.userContact {
+    width: 100%; 
+  }
 
-.memberSc {
-  align-self: stretch;
-  display: flex;
-  justify-content: space-between;
-  
-}
+.itemContact {
+    padding: 0px 50px;
+    padding-top: 10px;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: space-evenly;
+  }
 
-.cardFt {
+.footer {
+    width: 100%;
+    border-top: 1px solid black ;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+  }
 
-}
+.Btn {
+    background-color: var(--color2);
+    color: var(--color3);
+    width: 140px;
+    height: 35px;
+    text-decoration: none;
+    border: 1px solid transparent;
+    align-content: center;
+  }
 
-.socialLink {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-
-.socialLinkItem {
-
-}
