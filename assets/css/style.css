@@ -2,45 +2,74 @@
   box-sizing: border-box;
 } 
 
-table {
-  border-collapse: collapse;
-  border-spacing: 7px;
+body{
+  background-color: rgb(64, 59, 59);
+  line-height: 1.5;
+  font-size: 1.5em;
+  font-family: Winky Sans;
 }
 
-
-thead tr :nth-child(1) {
-  background-color: rgb(181, 181, 209);
+.headerBg {
+ background-image: url(./../images/pexels-lifeofb-49213211-11057005.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: 20% 80%;
+ text-align: center;
+ height: 700px;
 }
 
-thead tr :nth-child(2) {
-  background-color: rgb(94, 94, 138);
+.navigation {
+  background-color: rgb(64, 59, 59);
+  
+  
+  font-weight: 400;
+  color: white;
+  padding: 30px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
-thead tr :nth-child(3) {
-  background-color: rgb(103, 74, 130);
+.menu {
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
-thead tr :nth-child(4) {
-  background-color: blueviolet;
+a {
+  color: white;
+  text-decoration: none;
 }
 
-td, th {
-  padding: 4px; 
+.contactNv {
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 5px 20px;
 }
 
-tr :nth-child(2), tr :nth-child(3), tr :nth-child(4) {
-  text-align: center ;
+main {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 15px;
 }
 
-tr:nth-child(2n + 1) td:nth-child(2n + 1) {
-  background-color: gray;
+p {
+  font-family: initial;
+  font-size: 0.75em;
 }
 
-tr:nth-child(2n) td:nth-child(2n) {
-  background-color: rgb(79, 77, 77);
-}
-
-tr:nth-child(2n) td:nth-child(2n + 1), 
-tr:nth-child(2n + 1) td:nth-child(2n) {
-  background-color: rgb(193, 217, 235);
+article {
+  background-color: rgb(242, 231, 231);
+  width: 300px;
+  height: 500px;
+  padding: 20px;
+  overflow: hidden;
+  
 }
