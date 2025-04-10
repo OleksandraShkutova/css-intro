@@ -2,74 +2,50 @@
   box-sizing: border-box;
 } 
 
-body{
-  background-color: rgb(64, 59, 59);
-  line-height: 1.5;
-  font-size: 1.5em;
+.card {
+  background: linear-gradient(to right, pink, rgb(177, 50, 164));
   font-family: "Winky Sans", sans-serif;
-}
-
-.headerBg {
- background-image: url(./../images/pexels-lifeofb-49213211-11057005.jpg);
- background-repeat: no-repeat;
- background-size: cover;
- background-position: 20% 80%;
- text-align: center;
- height: 700px;
-}
-
-.navigation {
-  background-color: rgb(64, 59, 59);
-  
-  
-  font-weight: 400;
-  color: white;
-  padding: 30px 30px;
+  font-size: 1.2em;
+  width: 100%;
+  min-width: 300px;
+  max-width: 350px;
+  height: 180px;
+  border-radius: 10px;
+  padding: 25px;
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.topContent {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
 }
 
-.menu {
-  font-weight: 600;
-  text-transform: uppercase;
+.card::before, 
+.card::after {
+  content: '';
+  width: 200px;
+  height: 200px;
+  background-color: rgba(209, 180, 207, 0.2);
+  border-radius: 50%;
+  position: absolute;
 }
 
-a {
-  color: white;
-  text-decoration: none;
+.card::before {
+  bottom: -100px;
+  right: -20px;
 }
 
-.contactNv {
-  border: 2px solid white;
-  border-radius: 5px;
-  padding: 5px 20px;
+.card::after {
+  top: -40px;
+  right: -120px;
 }
 
-main {
-  padding: 20px 0;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  text-align: center;
-  gap: 15px;
-}
-
-p {
-  font-family: initial;
-  font-size: 0.75em;
-}
-
-article {
-  background-color: rgb(242, 231, 231);
-  width: 300px;
-  height: 500px;
-  padding: 20px;
-  overflow: hidden;
-  
-}
