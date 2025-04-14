@@ -2,37 +2,30 @@
   box-sizing: border-box;
 } 
 
-section {
-  text-align: center;
-  display: flex;
-  justify-content: center;
+.outerContainer {
+  border: 5px solid blue;
+  height: 400px;
+}
+
+.innerBlock {
+  border: 5px solid blueviolet;
+  width: 50px;
+  height: 50px;
+
+}
+
+.gridParent {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(2, 100px);
+  justify-items: center;
   align-items: center;
-  gap: 20px;
+  justify-content: space-around;
+  align-content: space-around;
 }
 
-p {
-  background-color: bisque;
-  padding: 20px;
-}
 
-@media screen and (min-width: 600px) {
-  p {
-    background-color: blue;
-  } 
-}
+.gridChild {
 
-@media screen and (max-width: 600px) {
-  section {
-    flex-direction: column;
-  }
-  p {
-    padding: 40px;
-  }
-}
-
-@media screen and (max-width: 400px){
-  p {
-    padding: 30px;
-  }
 }
 
