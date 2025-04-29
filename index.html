@@ -3,28 +3,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS INTRO</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body >
-  <!--<div class="outerContainer gridParent">
-    
-  </div>-->
-
-  <header class="header">header</header>
-  <nav class="nav">nav</nav>
-  <main class="main">
-    <div class="innerBlock gridChild">book 1</div>
-    <div class="innerBlock gridChild">boo 2</div>
-    <div class="innerBlock gridChild">book 3</div>
-    <div class="innerBlock gridChild">book 4</div>
-    <div class="innerBlock gridChild">book 5</div>
-    <div class="innerBlock gridChild">book 6</div>
-  </main>
-  <footer class="footer">footer</footer>
+    <header class="headerBg">
+        <div class="logo"><span>br</span> Architects</div>
+        <nav class="navigation">
+            <div>
+                <a href="#" class="itemNv"><span>br</span> Architects</a>
+            </div>
+            <div class="menu">
+                <a href="#projects" class="itemNv">Projects</a>
+                <a href="#about" class="itemNv">About</a>
+                <a href="#contact" class="itemNv">Contact</a>
+            </div>
+        </nav>
+     </header> 
+     <main class="content">
+        <section id="projects" class="section1">
+            <h2>Projects</h2>
+            <div class="projectConteiner">
+            <div class="cardProgect">
+                <img src="https://www.w3schools.com/w3images/house5.jpg" alt="Summer House">
+                <p>Summer House</p>
+            </div>
+            <div class="cardProgect">
+                <img src="https://www.w3schools.com/w3images/house2.jpg" alt="Brick House">
+                <p>Brick House</p>
+            </div>
+            <div class="cardProgect">
+                <img src="https://www.w3schools.com/w3images/house3.jpg" alt="Renovated">
+                <p>Renovated</p>
+            </div>
+            <div class="cardProgect">
+                <img src="https://www.w3schools.com/w3images/house4.jpg" alt="Barn House">
+                <p>Barn House</p>
+            </div>
+            <div class="cardProgect">
+                <img src="https://www.w3schools.com/w3images/house2.jpg" alt="Summer House">
+                <p>Summer House</p>
+            </div>
+            <div class="cardProgect">
+                <img src="https://www.w3schools.com/w3images/house5.jpg" alt="Brick House">
+                <p>Brick House</p>
+            </div>
+            <div class="cardProgect">
+                <img src="https://www.w3schools.com/w3images/house4.jpg" alt="Renovated">
+                <p>Renovated</p>
+            </div>
+            <div class="cardProgect">
+                <img src="https://www.w3schools.com/w3images/house3.jpg" alt="Barn House">
+                <p>Barn House</p>
+            </div>
+            </div>
+        </section>
+        <section id="about" class="section2">
+            <h2>About</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus sed error expedita minus dicta itaque fugiat incidunt ex nemo recusandae atque cumque quod, quidem necessitatibus porro saepe pariatur animi, tempore explicabo impedit delectus cum? Repellendus libero eum earum alias reprehenderit nobis atque, dolores aut? Ducimus illo quis labore asperiores in? Ipsam laborum culpa dolores enim voluptate libero, aliquam, neque incidunt alias odio labore numquam quisquam officia sequi vero possimus saepe, ratione excepturi. Praesentium doloribus repellendus debitis illo distinctio laborum dolor dicta et fugiat tempore dolorum odit possimus iure fuga, quis adipisci, fugit mollitia doloremque impedit est pariatur nisi commodi! Hic.</p>
+            <div class="projectConteiner">
+                <div class="cardExpert">
+                    <img src="https://www.w3schools.com/w3images/team2.jpg" alt="">
+                    <h3>Joun Doe</h3>
+                    <p>CEO & Founder</p>
+                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                    <button>Contact</button>
+                </div>
+                <div class="cardExpert">
+                    <img src="https://www.w3schools.com/w3images/team1.jpg" alt="">
+                    <h3>Jane Doe</h3>
+                    <p>Architect</p>
+                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                    <button>Contact</button>
+                </div>
+                <div class="cardExpert">
+                    <img src="https://www.w3schools.com/w3images/team3.jpg" alt="">
+                    <h3>Mike Rose</h3>
+                    <p>Architect</p>
+                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                    <button>Contact</button>
+                </div>
+                <div class="cardExpert">
+                    <img src="https://www.w3schools.com/w3images/team4.jpg" alt="">
+                    <h3>Dan Star</h3>
+                    <p>Architect</p>
+                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                    <button>Contact</button>
+                </div>
+            </div>
+        </section>
+        <form id="contact" class="section3" action="/action_page.php">
+            <h2>Contact</h2>
+            <p>Lets get in touch and talk about your next project.</p>
+            <div class="form">
+                <input type="text" value="Name"> 
+                <input type="text" value="Email"> 
+                <input type="text" value="Subject"> 
+                <input type="text" value="Coment">
+            </div>
+            <input type="submit" value="send message" class="btnFr">
+        </form>
+        <img src="https://www.w3schools.com/w3images/map.jpg" alt="map">
+     </main> 
+     <footer> 
+        <div>
+            <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp">w3.css</a></p>
+        </div>
+     </footer>  
 </body>
 </html>
