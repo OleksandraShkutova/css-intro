@@ -15,13 +15,13 @@ body{
 }
 
 img {
-  object-fit: cover;
+  object-fit: fill;
   object-position: center;
   width: 100%;
 }
 
 .headerBg {
-  letter-spacing: 5px;
+  letter-spacing: 4px;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -29,35 +29,36 @@ img {
   position: relative;
 }
 
-
 span {
   font-weight: 900;
   text-transform: uppercase;
+  padding: 0 5px;
 }
 
 .logo span {
-  background-color: black;
   background-color: rgb(0, 0, 0, 0.7);
   border: none;
-  padding: 13px;
-  z-index: 1;
+  padding: 10px;
 }
 
 .logo {
   color: white;
   font-size: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   position: absolute;
-  top: 50px;
-  left: 50px;
+  top: 50%;
+  left: 40%;
   z-index: 1;
-
 }
 
 .navigation {
   background-color: white;
   font-weight: 400;
   padding: 15px 25px;
- 
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -66,16 +67,14 @@ span {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1;
 }
 
 .itemNv {
   text-decoration: none;
   color: black;
-  border-color: none;
-  padding: 10px 15px;
-  
+  padding: 10px 10px;
 }
+
 a:hover {
   background-color: var(--grey);
 }
@@ -88,14 +87,14 @@ h2 {
 }
 
 main {
-  padding: 8px 16px;
+  padding: 8px 32px;
 }
 
 .projectConteiner {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
-  gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 15px;
 }
 
 .cardProgect {
@@ -187,4 +186,12 @@ footer {
 footer a {
   color: white;
 }
+
+@media screen and (max-width: 600px) {
+  .menu,.logo h1  {
+    display: none;
+  }
+}
+  
+
 
